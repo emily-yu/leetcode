@@ -12,7 +12,6 @@ class Solution:
         if len(candidates) == 0 and target > 0: 
             return []
 
-        res = list()
         # def asdf(l):
         #     return dict((x,l.count(x)) for x in set(l))
         def helper(curr, res):
@@ -20,28 +19,25 @@ class Solution:
 
             # if hits target
             if complement == 0:
-                # print("DONE: ", curr)
                 # compare against every other element to make sure doesn't exist
                 for elem in res: 
                     if sorted(elem) == sorted(curr):
                         return []
                 res.append(curr)
-                # print(res)
                 return curr
 
-            # if beyond target
-            # if complement < 0:
-            #     return []
-
             # if still has room to add elements
-            # print("helper(",curr, ")", "total: ", total, " complement: ", complement)
-            if complement > 0:
-                for elem in candidates:
-                    asdf = helper(curr + [elem], res)
+            # print("helper(",curr, ")", "total: ", sum(curr), " complement: ", complement)
+            # if complement > 0:
+            for elem in candidates:
+                # print(elem - sum(curr))
+                if elem + sum(curr) <= target:
+                    # print("helper(", curr + [elem], ")")
+                    helper(curr + [elem], res)
 
             return res
 
-        permutations = helper(res, list())
+        permutations = helper([], [])
         return permutations
 
 # @lc code=end
