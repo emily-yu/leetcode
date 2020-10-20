@@ -100,5 +100,47 @@ class Solution:
         return list(set(res))
         '''
 
+        # try 2 - attempt to code from memory
+        # https://www.youtube.com/watch?v=JfB3BugMht8&ab_channel=AmellPeralta
+
+        def isValid(inp):
+            if len(inp) > 4 or len(inp) == 0:
+                return False
+            if inp[0] == "0" and len(inp) > 1:
+                return False
+            intput = int(inp)
+            if intput > 255 or intput < 0:
+                return False
+
+            return True
+
+        start = 0
+        res = []
+        for elem1 in range(start, start + 4 + 1):
+            # print(elem1)
+            # print("elem1: ", s[start:elem1])
+            elem1str = s[start:elem1]
+            if isValid(elem1str): # isValid
+                for elem2 in range(elem1 + 1, elem1 + 4):
+                    # print(elem2)
+                    # print("elem1: ", s[start:elem1])
+                    # print("elem2: ", s[elem1 + 1: elem2])
+                    elem2str = s[elem1: elem2]
+                    if isValid(elem2str): #isValid
+                        for elem3 in range(elem2 + 1, elem2 + 4):
+                            elem3str = s[elem2: elem3]
+                            elem4str = s[elem3:]
+                            # print("elem1: ", s[start:elem1])
+                            # print("elem2: ", s[elem1: elem2])
+                            # print("elem3: ", s[elem2: elem3])
+                            # print("elem4: ", s[elem3:])
+                            print(elem1str, elem2str, elem3str, elem4str)
+                            if isValid(elem3str) and isValid(elem4str):
+                                print("elem4: ", s[elem3:])
+                                print("made it")
+                                print("-------")
+                                res.append(elem1str + "." + elem2str + "." + elem3str + "." + elem4str)
+        return res
+                
 # @lc code=end
 
