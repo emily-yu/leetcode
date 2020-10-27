@@ -38,7 +38,7 @@ var checkPossibility = function(nums) {
                 console.log(nums)
                 // elem = prev + 1
             }
-            // prev = elem
+            prev = nums[elem]
         }
     // });
     }
