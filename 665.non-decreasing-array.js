@@ -21,7 +21,7 @@ var checkPossibility = function(nums) {
     // nums.forEach(function(elem, ind) { // to break a foreach loop need to throw an exception
     
     // nums.some(elem => {
-
+    let asdf;
     for (let elem of nums.keys()) {
         console.log(prev, nums[elem], flipped)
         if (prev == null) {
@@ -34,15 +34,18 @@ var checkPossibility = function(nums) {
             }
             else if (prev > nums[elem] && flipped == false) {
                 flipped = true
-                nums.splice(elem - 1, 1)
                 console.log(nums)
+                asdf = [...nums].splice(1, elem).sort()
+                console.log(nums, asdf)
+                nums.splice(elem - 1, 1)
                 // elem = prev + 1
             }
             prev = nums[elem]
         }
+        console.log()
     // });
     }
-    
+    console.log(asdf)
     const sorted = [...nums].sort()
     console.log(sorted, nums)
     for (let i = 0; i < nums.length; i++) {
