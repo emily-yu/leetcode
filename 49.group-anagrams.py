@@ -6,13 +6,18 @@
 
 # @lc code=start
 class Solution:
+    '''
+    112/112 cases passed (92 ms)
+    Your runtime beats 90.85 % of python3 submissions
+    Your memory usage beats 10.79 % of python3 submissions (18.1 MB)
+    '''
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # edge cases
         if len(strs) == 0:
             return []
         if len(strs) == 1:
             return [strs]
-
+            
         '''
         ["eat", "tea", "tan", "ate", "nat", "bat"]
 
