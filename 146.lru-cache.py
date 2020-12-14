@@ -11,46 +11,19 @@ from collections import OrderedDict
 class LRUCache:
 
     def __init__(self, capacity: int):
-        self.q = OrderedDict()
-        self.limit = capacity
+        self.vals = {} # { key: (val, Node) }
+        self.lru = None # Node
+        self.mru = None # Node
 
     def get(self, key: int) -> int:
-        if key in self.q:
-            val = self.q[key]
-            del self.q[key] # remove, then reappend to put in correct order
-            self.q[key] = val
-            return val # return the val to get
-        return -1 # doesn't exist
+        # go to vals[key][1]: 
+        # 1) reassign prev and next to each other
+        # 2) assign mru.next = vals[key][0]
+        # return vals[key][0]
 
     def put(self, key: int, value: int) -> None:
-        # # if already in, remove+reappend to put at most recent position
-        # if key in self.q:
-        #     del self.q[key]
-        #     self.q[key] = value
-
-        # # will exceed limit when adding one more element
-        # elif len(self.q) >= self.limit:
-        #     # oldkey, oldval = list(self.q)[0] # oldest at top
-        #     # del self.q[oldkey]
-
-        #     k, v = self.q.iteritems().next()
-        #     print(k, v)
-        #     del self.q[k]
-        
-        #     # append new element
-        #     self.q[key] = value
-
-        if key in self.q:
-            # Delete existing key before refreshing it
-            del self.q[key]
-        elif len(self.q) >= self.limit:
-            # Delete oldest
-            k, v = self.q.iteritems().next()
-            del self.q[k]
-        self.q[key] = value
-
-
-
+        # get lru node: 1) pop from vals, 2) remove from array + reassign
+        # add new node: 1) add to vals, 2) add as mru node + reassign pointers
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
