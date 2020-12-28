@@ -11,7 +11,7 @@ class Solution:
             return True
 
         
-        # prerequisites = [[2, 3], [3, 4], [1, 4], [4, 5]] # good
+        prerequisites = [[2, 3], [3, 4], [1, 4], [4, 5]] # good
         # prerequisites = [[2, 3], [3, 4], [4, 2]] # bad
         tracking = {}
         for key, value in prerequisites:
@@ -46,6 +46,8 @@ class Solution:
         return True
         '''
 
+        '''
+        40/46
         print(tracking)
         for key, value in tracking.items():
             print("KEY: ", key)
@@ -78,5 +80,52 @@ class Solution:
                     break
             
         return True
+        '''
+
+        ### dfs graph
+        ### https://leetcode.com/problems/course-schedule/discuss/434263/easy-solution-using-dfs-basically-what-we-have-to-do-is-detect-a-loop-in-directed-graph
+        print(tracking)
+
+        # white = []
+        white = [] + list(set(item for sublist in prerequisites for item in sublist))
+        grey = []
+        black = []
+        visited = [0] * white
+        print(white, black, grey)
+
+        # explore every neighbors
+        def dfs(root):
+            # if visited[root] == 1: # grey
+            if root in grey:
+                return False
+            
+            # explore neighbors
+            children = tracking[root]
+            if len(children) == 0: # reached end
+                return True
+            for child in children:
+                if child in grey: # currently being visited, bad
+                    return False
+                
+                result = dfs(child) # one of children created cycle
+                if not result:
+                    return False
+
+                # no children / child creates a cycle
+                # valid; black (fully visited end node) or white (not visited)
+                ind = root.index(child)
+                # visited[ind] = 1 # grey/touched
+                white.remove(child) # move around elements
+                grey.append(child)
+                return True
+        
+        # run until all nodes have been explored
+        while len(white) > 0:
+            root = white.pop()
+            for child in tracking[root]:
+                if child in white and not dfs(child):
+                    return False
+        return True # ran through every node without triggering a cycle
+
 # @lc code=end
 
