@@ -13,26 +13,38 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: TreeNode, k: int) -> int:
-        q = [root]
-        explored = set()
-        while len(q) > 0:
-            root = q.pop()
-            explored.add(root.val)
+        ### bfs
+        # q = [root]
+        # explored = set()
+        # while len(q) > 0:
+        #     root = q.pop()
+        #     explored.add(root.val)
 
-            if root.left:
-                q.append(root.left)
-            if root.right:
-                q.append(root.right)
+        #     if root.left:
+        #         q.append(root.left)
+        #     if root.right:
+        #         q.append(root.right)
         
-        # print(explored)
-        result = []
-        for i in range(k):
-            min_elem = min(explored)
-            result.append(min_elem)
-            explored.remove(min_elem)
+        # result = []
+        # for i in range(k):
+        #     min_elem = min(explored)
+        #     result.append(min_elem)
+        #     explored.remove(min_elem)
     
-        # print(result)
-        return result[-1]
+        # return result[-1]
+
+        ### standard inorder; after reading solution
+        q = []        
+        def f(root):
+            if root is None:
+                return []
+            # left smaller than middle smaller than right side
+            result = f(root.left) + [root.val] + f(root.right)
+            return result
+        
+        return f(root)[k-1]
+        
+        
 
 
 
