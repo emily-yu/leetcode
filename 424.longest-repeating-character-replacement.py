@@ -14,42 +14,61 @@ class Solution:
 
         '''
         Accepted
-        37/37 cases passed (9696 ms)
-        Your runtime beats 5.04 % of python3 submissions
-        Your memory usage beats 18.48 % of python3 submissions (14.6 MB)
+        37/37 cases passed (368 ms)
+        Your runtime beats 43.46 % of python3 submissions
+        Your memory usage beats 65.48 % of python3 submissions (14.3 MB)
         '''
-        
+        n = len(s)
+        tracking = {}
+        for elem in s:
+            if elem not in tracking:
+                tracking[elem] = 0
+
+        if len(tracking) == 1:
+            return n
+        if s == "":
+            return 0
+
         start = 0
         end = 1
+        tracking[s[0]] = 1
 
         maxct = 0
-        rangelen = start - end
-        while end <= len(s):
+        # rangelen = start - end
+
+        while end <= n:
             search = s[start:end]
         
             # Finding maximum occurrence of a character  
                 # and get the index of it. 
             # wc = Counter(search) 
             # val = max(wc.values())
-            setmax = 0
-            for elem in set(list(search)):
-                setct = search.count(elem)
-                if setct >= setmax:
-                    setmax = setct
-            val = setmax
 
-            diff = (end - start) - val
+            # setmax = 0
+            # for elem in set(list(search)):
+            #     setct = search.count(elem)
+            #     if setct >= setmax:
+            #         setmax = setct
+            # val = setmax
+            val = max(tracking.values())
+            # print(tracking, val)
+
+            diff = end - start
             # if diff > 2:
-            if diff > k:
+            if diff - val > k:
                 # print(search, "shift", start, end)
+                tracking[s[start]] -= 1
                 start += 1
-                end += 1
+                # end += 1
                 # print(s[start:end], "after shift: ", start, end)
-            else:
-                # print(search, "ok", end - start)
-                if end - start > maxct:
-                    maxct = end - start
-                end += 1
+
+                # update counts array
+            elif diff > maxct:
+                maxct = diff
+
+            if end < n:
+                tracking[s[end]] += 1
+            end += 1
 
         # print(maxct)
         return maxct
