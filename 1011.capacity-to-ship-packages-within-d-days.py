@@ -7,9 +7,6 @@
 # @lc code=start
 class Solution:
     def shipWithinDays(self, weights: List[int], D: int) -> int:
-        # for optimization
-        memo = dict()
-
         # test case
         # weights = [1, 2, 3, 1, 1]
         # D = 3
