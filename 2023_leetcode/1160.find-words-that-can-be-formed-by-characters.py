@@ -16,7 +16,6 @@ class Solution(object):
         if len(chars) == 0: return 0
 
         count = 0
-        # count chars map
         base = {}
         for char in chars:
             if char in base:
@@ -24,32 +23,25 @@ class Solution(object):
             else:
                 base[char] = 1
 
-        # count chars map for each word
         for word in words:
-            # if len of word > chars then it's doomed
+            if len(word) > len(chars):
+                continue
+
             map = dict(base)
             valid = True
-
-            # char types
             for char in word:
                 if char in map:
                     map[char] -= 1
                 else:
                     valid = False
 
-            # any negative
-            # print(map)
             for elem in map:
                 if map[elem] < 0:
                     valid = False
 
             if valid:
-                # print(word)
                 count += len(word)
                 
-        
-            
         return count
-        # alt, sort each and if they match then ya
 # @lc code=end
 

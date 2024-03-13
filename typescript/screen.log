@@ -1,0 +1,91 @@
+Script started on Wed Mar 13 11:39:33 2024
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004h[7mnpm install -g ts-node typescript '@types/node'[27m
+[K[A[44C[27mn[27mp[27mm[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m-[27mg[27m [27mt[27ms[27m-[27mn[27mo[27md[27me[27m [27mt[27my[27mp[27me[27ms[27mc[27mr[27mi[27mp[27mt[27m [27m'[27m@[27mt[27my[27mp[27me[27ms[27m/[27mn[27mo[27md[27me[27m'[1B[K[?2004l
+[?25l([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:lib: [7msill[0m [35midealTree[0m buildDeps[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:lib: [32;40mtiming[0m [35midealTree:#root[0m Completed in 866ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:lib: [32;40mtiming[0m [35midealTree:#root[0m Completed in 866ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:lib: [32;40mtiming[0m [35midealTree:#root[0m Completed in 866ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ reify:undici-types: [32;40mtiming[0m [35mreify:loadBundles[0m Completed in 0ms[0m[K([107;97m###########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:yn: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/yn/-/yn-3.1.1.tgz 59ms (cache miss)[0m[K([107;97m#################[0m[100;90m⠂[0m) ⠴ reify:@types/node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@types/node/-/node-20.11.27.tgz 106ms (cache miss)[0m[K([107;97m##################[0m) ⠏ reify:@cspotcode/source-map-support: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz 115ms (cache miss)[0m[K([107;97m##################[0m) ⠏ reify:@cspotcode/source-map-support: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz 115ms (cache miss)[0m[K[K[?25h
+added 20 packages in 1s
+[37;40mnpm[0m [0m[36;40mnotice[0m[35m[0m 
+[0m[37;40mnpm[0m [0m[36;40mnotice[0m[35m[0m New [33mminor[39m version of npm available! [31m10.2.4[39m -> [32m10.5.0[39m
+[0m[37;40mnpm[0m [0m[36;40mnotice[0m[35m[0m Changelog: [36mhttps://github.com/npm/cli/releases/tag/v10.5.0[39m
+[0m[37;40mnpm[0m [0m[36;40mnotice[0m[35m[0m Run [32mnpm install -g npm@10.5.0[39m to update!
+[0m[37;40mnpm[0m [0m[36;40mnotice[0m[35m[0m 
+[0m[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hnpm install -g ts-node typescript '@types/node'
+[K[K[A[44C[?2004l[1B
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004htts-node 1.ts[1m [0m[0m [?2004l
+/opt/homebrew/lib/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+[96m1.ts[0m:[93m109[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                      ~~~~[0m
+[96m1.ts[0m:[93m109[0m:[93m37[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                                    ~~~~[0m
+
+    at createTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:859:12)
+    at reportTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:863:19)
+    at getOutput (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1077:36)
+    at Object.compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1433:41)
+    at Module.m._compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1617:30)
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)[39m
+    at Object.require.extensions.<computed> [as .ts] (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1621:12)
+[90m    at Module.load (node:internal/modules/cjs/loader:1212:32)[39m
+[90m    at Function.Module._load (node:internal/modules/cjs/loader:1028:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)[39m {
+  diagnosticCodes: [ [33m18046[39m, [33m18046[39m ]
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 1.ts[?2004l
+/opt/homebrew/lib/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+[96m1.ts[0m:[93m109[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                      ~~~~[0m
+[96m1.ts[0m:[93m109[0m:[93m37[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                                    ~~~~[0m
+
+    at createTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:859:12)
+    at reportTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:863:19)
+    at getOutput (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1077:36)
+    at Object.compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1433:41)
+    at Module.m._compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1617:30)
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)[39m
+    at Object.require.extensions.<computed> [as .ts] (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1621:12)
+[90m    at Module.load (node:internal/modules/cjs/loader:1212:32)[39m
+[90m    at Function.Module._load (node:internal/modules/cjs/loader:1028:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)[39m {
+  diagnosticCodes: [ [33m18046[39m, [33m18046[39m ]
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 1.ts[?2004l
+/opt/homebrew/lib/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+[96m1.ts[0m:[93m109[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                      ~~~~[0m
+[96m1.ts[0m:[93m109[0m:[93m37[0m - [91merror[0m[90m TS18046: [0m'user' is of type 'unknown'.
+
+[7m109[0m     console.log(` - ${user.name}, ${user.age}`);
+[7m   [0m [91m                                    ~~~~[0m
+
+    at createTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:859:12)
+    at reportTSError (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:863:19)
+    at getOutput (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1077:36)
+    at Object.compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1433:41)
+    at Module.m._compile (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1617:30)
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)[39m
+    at Object.require.extensions.<computed> [as .ts] (/opt/homebrew/lib/node_modules/[4mts-node[24m/src/index.ts:1621:12)
+[90m    at Module.load (node:internal/modules/cjs/loader:1212:32)[39m
+[90m    at Function.Module._load (node:internal/modules/cjs/loader:1028:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)[39m {
+  diagnosticCodes: [ [33m18046[39m, [33m18046[39m ]
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004h
