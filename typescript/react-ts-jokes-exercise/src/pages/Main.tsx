@@ -6,6 +6,7 @@ import "../components/main.css";
 // https://www.freecodecamp.org/news/context-api-in-react/
 import { FavoritesList } from "../components/context.tsx";
 import { fetchJoke, IJoke } from "../components/context";
+import { JokeComponent } from "../components/Joke.tsx";
 import axios from "axios";
 
 // Joke API URL
@@ -65,11 +66,11 @@ const Main: React.FC = () => {
           {loading ? (
             <p>Loading...</p>
           ) : joke ? (
-            <div>
-              <p>{joke.joke}</p>
-              <p>ID: {joke.id}</p>
-            </div>
+            <JokeComponent data={joke} />
           ) : (
+            //   <p>{joke.joke}</p>
+            //   <p>ID: {joke.id}</p>
+            // </div>
             <p>No joke available</p>
           )}
         </div>
