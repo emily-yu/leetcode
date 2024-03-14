@@ -143,4 +143,11 @@ Users:
 Users of age 23:
  - Kate Müller, 23, Astronaut
  - Wilson, 23, Ball
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004h
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hllose lo    l  cclose log[?2004l
+zsh: command not found: close
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hsscr s sexit[?2004l
+zsh: command not found: sexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004heexit[?2004l
+zsh: failed to write history file /Users/emilyyu/.zsh_history: permission denied
+
+Script done on Thu Mar 14 09:54:09 2024
