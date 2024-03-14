@@ -88,4 +88,59 @@ TSError: ⨯ Unable to compile TypeScript:
 [90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)[39m {
   diagnosticCodes: [ [33m18046[39m, [33m18046[39m ]
 }
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 1.ts.ts 2.ts[?2004l
+ - Max Mustermann, 25
+ - Jane Doe, 32
+ - Kate Müller, 23
+ - Bruce Willis, 64
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 2.ts.ts 3.ts[?2004l
+node:internal/modules/cjs/loader:1152
+  throw err;
+  ^
+
+Error: Cannot find module './3.ts'
+Require stack:
+- /Users/emilyyu/Desktop/leetcode/typescript/imaginaryUncacheableRequireResolveScript
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:1149:15)[39m
+[90m    at Function.resolve (node:internal/modules/helpers:187:19)[39m
+    at requireResolveNonCached (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:549:16)
+    at getProjectSearchDir (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:519:40)
+    at phase3 (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:267:27)
+    at bootstrap (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:47:30)
+    at main (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:33:12)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/[4mts-node[24m/dist/bin.js:579:5)
+[90m    at Module._compile (node:internal/modules/cjs/loader:1378:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/emilyyu/Desktop/leetcode/typescript/imaginaryUncacheableRequireResolveScript'[39m
+  ]
+}
+
+Node.js v21.6.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 3.ts[?2004l
+ - Max Mustermann, 25, Chimney sweep
+ - Jane Doe, 32, Administrator
+ - Kate Müller, 23, Astronaut
+ - Bruce Willis, 64, World saver
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 3.ts.ts 4.ts[?2004l
+Admins:
+ - Jane Doe, 32, Administrator
+ - Bruce Willis, 64, World saver
+
+Users:
+ - Max Mustermann, 25, Chimney sweep
+ - Kate Müller, 23, Astronaut
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 4.ts[?2004l
+Admins:
+ - Jane Doe, 32, Administrator
+ - Bruce Willis, 64, World saver
+
+Users:
+ - Max Mustermann, 25, Chimney sweep
+ - Kate Müller, 23, Astronaut
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004hts-node 4.ts\.ts5.ts.ts .ts .ts 5.ts[?2004l
+Users of age 23:
+ - Kate Müller, 23, Astronaut
+ - Wilson, 23, Ball
 [1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jemilyyu@Emilys-MacBook-Pro-2 ts_refresher % [K[?2004h
