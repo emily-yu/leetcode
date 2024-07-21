@@ -1,0 +1,11 @@
+Single Fetch vs. Multiple Fetches
+First Fetch (Single Request):
+
+The first fetch request retrieves a single JSON array of job story IDs.
+We use await to ensure that the data is fetched and parsed into JSON before proceeding.
+Only one network request is needed.
+Second Fetch (Multiple Requests):
+
+The second fetch requires fetching details for each job story ID.
+We need to make multiple network requests, one for each job story ID.
+This can result in many asynchronous operations that need to be handled concurrently.

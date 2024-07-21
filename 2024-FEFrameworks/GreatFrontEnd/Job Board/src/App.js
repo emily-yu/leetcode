@@ -10,40 +10,59 @@ export default function App() {
   const [blogPosts, setBlogPosts] = useState([]);
 
   // on load
-  useEffect(() => {    
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const ids = await fetch('https://hacker-news.firebaseio.com/v0/jobstories.json')
+          .then(response => response.json());
 
-    const derp = async() => {
-// nested fetches. https://stackoverflow.com/a/57075730
-    const ids = await fetch(`https://hacker-news.firebaseio.com/v0/jobstories.json`)
-        .then(response => response.json())
-        .then(data => {
-          // console.log("arrivals")
-          console.log(data)
-          return data
-        }).catch(err => {
-          console.log(err)
-        })
-        let result = []
-        for (let item in ids) {
-          const data = await fetch(`https://hacker-news.firebaseio.com/v0/item/${item}.json`)
-            .then(response => response.json())
-            .then(data => {
-              // console.log("it's only adding on each rerender: ", data)
-              return data
-            })
-            result.push(data)
-            // console.log("curr result:", result)
-          }
-    
-        console.log(ids, result)
-        return result
-      
-    }
-    derp().then((data) => {
-      console.log("the final:", data)
-      setBlogPosts(data)
-    })
-    
-  })
-  return <ul>{ blogPosts && JSON.stringify(blogPosts)}</ul>;
+        const result = await Promise.all(
+          ids.map(async (id) => {
+            const data = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)
+              .then(response => response.json());
+            return data;
+          })
+        );
+
+        console.log('Fetched IDs:', ids);
+        console.log('Fetched Posts:', result);
+
+        // Remove the first element of the result array
+        result.shift();
+
+        setBlogPosts(result);
+        console.log('Updated Posts:', result);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          {blogPosts.length > 0 ? (
+            blogPosts.map((item) => (
+              <tr key={item.id}>
+                <td>{item.title}</td>
+                <td>{item.time}</td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="1">No posts available</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
 }
