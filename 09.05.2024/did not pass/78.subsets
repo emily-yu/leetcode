@@ -1,0 +1,48 @@
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        
+        
+        # q = [[]]
+        # # BFS
+        # # while q is not empty:
+        # #     for idx in range(len(q)):
+        # #         q[idx].append(nums[0])
+
+        # # DFS
+        # def f(toadd, subset): # (index, subset)
+        #     print(toadd, subset, nums)
+        #     #1, [[]] returns [[]] + [[1]]
+        #     #
+        #     if toadd == len(nums): # (ok)
+        #         return [[]]
+        #     # base = subset # attempted to copy here
+        #     base = subset.copy()
+
+        #     for idx in range(len(subset)):
+        #         subset.append(nums[toadd])
+
+        #     result = [base] + [f(toadd + 1, subset)]
+        #     print(result)
+        #     return result
+
+        # return f(0, q)
+        res = []
+
+        subset = []
+
+        def dfs(i):
+            if i >= len(nums):
+                res.append(subset.copy())
+                print("res:", res)
+                return # when returning, what variables if any are maintained? how is res holding this
+            subset.append(nums[i])
+            dfs(i + 1)
+            print("subset1:", subset)
+            subset.pop()
+            print("subset2:", subset)
+            dfs(i + 1)
+
+        dfs(0)
+        return res
+
+            

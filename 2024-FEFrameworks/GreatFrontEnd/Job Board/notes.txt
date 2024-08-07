@@ -9,3 +9,8 @@ Second Fetch (Multiple Requests):
 The second fetch requires fetching details for each job story ID.
 We need to make multiple network requests, one for each job story ID.
 This can result in many asynchronous operations that need to be handled concurrently.
+
+
+class based components vs hook based
+- https://reacttraining.com/blog/useEffect-is-not-the-new-componentDidMount
+- hook based are scoped in their example 
