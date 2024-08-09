@@ -1,0 +1,4 @@
+notes
+1. dfs vs bfs (iterative vs recursive ex)
+- https://stackoverflow.com/questions/62270896/recursive-to-iterative-dfs-python
+- https://www.youtube.com/shorts/ymLp6HeKv1o
