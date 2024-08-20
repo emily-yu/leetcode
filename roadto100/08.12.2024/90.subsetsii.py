@@ -15,7 +15,8 @@ class Solution:
                 print("res:", res)
                 return # when returning, what variables if any are maintained? how is res holding this
             # subset.append(valnums[i])
-            subset.append(nums[i])
+            subset.append(nums[i])u
+            
             dfs(i + 1)
             print("subset1:", subset)
             subset.pop()
