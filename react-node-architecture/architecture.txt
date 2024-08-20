@@ -1,0 +1,6 @@
+running the thing: 
+1. (react fe) npm start
+2. (expressjs) nodemon server.js 
+
+parts
+1. for unit testing, tests are in setupTests.js (https://create-react-app.dev/docs/running-tests/)
